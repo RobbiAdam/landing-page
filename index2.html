@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Improved Landing Page</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        .header {
+            background-color: #1f2937;
+            padding: 20px 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-text {
+            color: #f9faf8;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #e5e7eb;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #3882f6;
+        }
+
+        /* Hero Section Styles */
+        .hero {
+            background-color: #1f2937;
+            padding: 80px 0;
+            color: #f9faf8;
+        }
+
+        .hero-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-title {
+            font-size: 48px;
+            font-weight: 900;
+            margin-bottom: 10px;
+        }
+
+        .hero-subtitle {
+            font-size: 18px;
+            color: #e5e7eb;
+            margin-bottom: 20px;
+        }
+
+        .hero-image {
+            flex: 1;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Button Styles */
+        .btn {
+            background-color: #3882f6;
+            color: #f9faf8;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #2563eb;
+        }
+
+        /* Info Section Styles */
+        .info {
+            background-color: #f9faf8;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .info-title {
+            font-size: 36px;
+            font-weight: 900;
+            color: #1f2937;
+            margin-bottom: 40px;
+        }
+
+        .info-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .info-box {
+            flex-basis: calc(25% - 40px);
+            max-width: 250px;
+        }
+
+        .info-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .info-box-text {
+            font-size: 18px;
+            color: #4b5563;
+        }
+
+        /* Quote Section Styles */
+        .quote {
+            background-color: #e5e7eb;
+            padding: 80px 0;
+        }
+
+        .quote-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .quote-text {
+            font-size: 36px;
+            font-style: italic;
+            color: #1f2937;
+            margin-bottom: 20px;
+        }
+
+        .quote-author {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1f2937;
+            text-align: right;
+        }
+
+        /* Call-to-Action Section Styles */
+        .call-to-action {
+            background-color: #f9faf8;
+            padding: 80px 0;
+        }
+
+        .cta-content {
+            background-color: #3882f6;
+            border-radius: 8px;
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .cta-text {
+            color: #f9faf8;
+        }
+
+        .cta-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .cta-subtitle {
+            font-size: 18px;
+        }
+
+        .cta-btn {
+            background-color: transparent;
+            border: 2px solid #f9faf8;
+        }
+
+        /* Footer Styles */
+        .footer {
+            background-color: #1f2937;
+            color: #f9faf8;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo-text">Header Logo</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">This website is awesome</h1>
+                <p class="hero-subtitle">This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast</p>
+                <button class="btn">Sign up</button>
+            </div>
+            <div class="hero-image">
+                <img src="/api/placeholder/600/400" alt="Hero image">
+            </div>
+        </div>
+    </section>
+
+    <section class="info">
+        <div class="container">
+            <h2 class="info-title">Some random information.</h2>
+            <div class="info-container">
+                <div class="info-box">
+                    <img src="/api/placeholder/250/250" alt="Info image 1">
+                    <p class="info-box-text">This is some subtext under an illustration or image</p>
+                </div>
+                <div class="info-box">
+                    <img src="/api/placeholder/250/250" alt="Info image 2">
+                    <p class="info-box-text">This is some subtext under an illustration or image</p>
+                </div>
+                <div class="info-box">
+                    <img src="/api/placeholder/250/250" alt="Info image 3">
+                    <p class="info-box-text">This is some subtext under an illustration or image</p>
+                </div>
+                <div class="info-box">
+                    <img src="/api/placeholder/250/250" alt="Info image 4">
+                    <p class="info-box-text">This is some subtext under an illustration or image</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quote">
+        <div class="container">
+            <div class="quote-content">
+                <p class="quote-text">This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</p>
+                <p class="quote-author">-Thor, God of Thunder</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="call-to-action">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h3 class="cta-title">Call to action! It's time!</h3>
+                    <p class="cta-subtitle">Sign up for our product by clicking that button right over there!</p>
+                </div>
+                <button class="btn cta-btn">Sign up</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Copyright © The Odin Project 2021</p>
+        </div>
+    </footer>
+</body>
+</html>
